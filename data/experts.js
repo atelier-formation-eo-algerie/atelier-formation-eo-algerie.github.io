@@ -52,7 +52,7 @@ window.EXPERTS = [
     institution: "Texas A&M AgriLife Research",
     specialty: "Agronomie, santé des sols et science ouverte appliquée à l'agriculture.",
     profile: "https://agrilifepeople.tamu.edu/people/view/39943",
-    photo: "",                /* aucun portrait officiel trouvé — à demander */
+    photo: "assets/images/experts/kaci.jpg",
     photoCredit: "",
     status: "Participation confirmée"
   },

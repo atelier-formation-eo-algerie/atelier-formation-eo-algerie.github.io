@@ -34,7 +34,7 @@ Tout le contenu évolutif se trouve dans `data/` ; il n'est pas nécessaire de t
 }
 ```
 
-Portraits : ceux de M. Brown, A. Endsley, M. Enenkel et B. Auvermann sont **affichés depuis leurs pages professionnelles officielles** (aucune licence de réutilisation n'y est indiquée). Une fois l'accord de chaque personne obtenu, il est préférable d'enregistrer une copie dans `assets/images/experts/` et de remplacer l'URL par ce chemin. Aucun portrait officiel n'existe pour G. Kaci : lui en demander un.
+Portraits : ceux de M. Brown, A. Endsley, M. Enenkel et B. Auvermann sont **affichés depuis leurs pages professionnelles officielles** (aucune licence de réutilisation n'y est indiquée). Une fois l'accord de chaque personne obtenu, il est préférable d'enregistrer une copie dans `assets/images/experts/` et de remplacer l'URL par ce chemin.
 
 ### Institutions
 
@@ -61,7 +61,7 @@ Aucune institution ne doit être présentée comme partenaire sans accord écrit
 | `agri-avant.jpg`, `agri-apres.jpg` | El Meniaa, Landsat 7 (2003) et Landsat 9 (2025) | USGS — domaine public ; composition réalisée pour ce site |
 | `domain-forets.jpg` | Incendies de Kabylie, Sentinel-2, 12/08/2021 | ESA, données Copernicus modifiées — CC BY-SA 3.0 IGO (recadrée) |
 | `domain-dechets.jpg` | CET de Hassi Bounif (Oran), Sentinel-2C, 02/11/2026 | Données Copernicus Sentinel modifiées (2026) ; composition réalisée pour ce site |
-| `experts/ouaret.jpg` | Portrait de W. Ouaret | Photo personnelle |
+| `experts/ouaret.jpg`, `experts/kaci.jpg` | Portraits de W. Ouaret et G. Kaci | Photos fournies par les coordinateurs |
 
 Pour remplacer une image : garder le même nom de fichier (ou modifier `src` dans `index.html`) et mettre à jour le texte `alt`, la ligne technique (`.meta`) et la légende.
 
