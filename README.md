@@ -2,7 +2,7 @@
 
 Site statique (HTML, CSS, JavaScript natif) présentant une **proposition d'atelier en cours de discussion**. Aucune dépendance ni serveur : compatible GitHub Pages.
 
-Adresse prévue : https://atelier-formation-eo-algerie.github.io/
+Adresse prévue : https://atelier-eo-algerie.github.io/atelier-formation-eo-algerie.github.io/
 
 ## Modifier le contenu
 
@@ -74,17 +74,14 @@ python -m http.server 8000
 
 ## Publier sur GitHub Pages
 
-Le site est publié depuis une organisation GitHub dédiée, ce qui donne une adresse courte.
+Dépôt : https://github.com/atelier-eo-algerie/atelier-formation-eo-algerie.github.io (organisation `atelier-eo-algerie`).
 
-1. Sur GitHub : **+ → New organization → Free**, nom exact `atelier-formation-eo-algerie` (propriétaire : votre compte).
-2. Dans cette organisation, créer un dépôt **public** vide nommé exactement `atelier-formation-eo-algerie.github.io` (sans README).
-3. Depuis ce dossier :
-   ```bash
-   git push -u origin main
-   ```
-4. Sur GitHub : *Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`* (normalement déjà activé pour un dépôt `*.github.io`).
-5. Le site est en ligne après une à deux minutes : https://atelier-formation-eo-algerie.github.io/
+1. Depuis ce dossier : `git push -u origin main`
+2. Sur GitHub : *Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`*.
+3. Le site est en ligne après une à deux minutes : https://atelier-eo-algerie.github.io/atelier-formation-eo-algerie.github.io/
+
+Adresse plus courte (facultatif) : renommer le dépôt en `atelier-eo-algerie.github.io` donne https://atelier-eo-algerie.github.io/ ; mettre alors à jour `og:url` et `og:image` dans `index.html` et exécuter `git remote set-url origin https://github.com/atelier-eo-algerie/atelier-eo-algerie.github.io.git`.
 
 Pour publier une modification : `git add -A`, `git commit -m "…"`, `git push`.
 
-Pour inviter un co-éditeur (par exemple G. Kaci) : *Organisation → People → Invite member*.
+Pour inviter un co-éditeur (par exemple G. Kaci) : *Organisation `atelier-eo-algerie` → People → Invite member*.
