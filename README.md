@@ -12,7 +12,7 @@ Tout le contenu évolutif se trouve dans `data/` ; il n'est pas nécessaire de t
 |---|---|---|
 | Le statut affiché en haut de page | `data/site.js` | `statusLabel`, `statusText` |
 | La date de mise à jour | `data/site.js` | `lastUpdated` |
-| Le contact de coordination | `data/site.js` | `contact` (les champs vides ne s'affichent pas) |
+| Les coordinateurs (pied de page, présentation) | `data/site.js` | `coordination` (une entrée par personne) |
 | La note de proposition PDF | `data/site.js` | `conceptNotePdf` (le bouton n'apparaît que si le champ est rempli) |
 | Le programme des trois journées | `data/program.js` | `days`, `note` |
 | Les experts | `data/experts.js` | un objet par personne |

@@ -2,6 +2,7 @@
    EXPERTS PRESSENTIS — fichier de données éditable.
    ---------------------------------------------------------------------
    name        : nom affiché
+   role        : facultatif, rôle dans la proposition (ex. coordination)
    initials    : utilisées si aucun portrait n'est disponible
    institution : affiliation actuelle, vérifiée sur une page officielle
    specialty   : spécialité courte, telle que décrite publiquement
@@ -14,13 +15,14 @@
 window.EXPERTS = [
   {
     name: "Dr Walid Ouaret",
+    role: "Coordination de la proposition",
     initials: "WO",
     institution: "The Earth Commons Institute, Georgetown University",
     specialty: "Observation de la Terre, sécheresse, changement d'usage des terres et risques climatiques.",
     profile: "https://earthcommons.georgetown.edu/profiles/walid-ouaret/",
     photo: "assets/images/experts/ouaret.jpg",
     photoCredit: "",
-    status: "Participation à confirmer"
+    status: "Participation confirmée"
   },
   {
     name: "Dr Molly E. Brown",
@@ -45,13 +47,14 @@ window.EXPERTS = [
   },
   {
     name: "Dr Ghiles Kaci",
+    role: "Coordination de la proposition",
     initials: "GK",
     institution: "Texas A&M AgriLife Research",
     specialty: "Agronomie, santé des sols et science ouverte appliquée à l'agriculture.",
     profile: "https://agrilifepeople.tamu.edu/people/view/39943",
     photo: "",                /* aucun portrait officiel trouvé — à demander */
     photoCredit: "",
-    status: "Participation à confirmer"
+    status: "Participation confirmée"
   },
   {
     name: "Dr Markus Enenkel",

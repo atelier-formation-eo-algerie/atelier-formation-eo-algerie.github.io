@@ -12,13 +12,22 @@ window.SITE = {
      le bouton n'apparaît pas. Exemple : "assets/docs/note-de-proposition.pdf" */
   conceptNotePdf: "",
 
-  /* Contact de coordination. Les champs vides ne s'affichent pas. */
-  contact: {
-    name: "Dr Walid Ouaret",
-    role: "Coordination scientifique de la proposition",
-    email: "",
-    profile: "https://earthcommons.georgetown.edu/profiles/walid-ouaret/"
-  },
+  /* Coordination de la proposition (une entrée par coordinateur).
+     Les champs vides ne s'affichent pas. */
+  coordination: [
+    {
+      name: "Dr Walid Ouaret",
+      institution: "The Earth Commons Institute, Georgetown University",
+      email: "",
+      profile: "https://earthcommons.georgetown.edu/profiles/walid-ouaret/"
+    },
+    {
+      name: "Dr Ghiles Kaci",
+      institution: "Texas A&M AgriLife Research",
+      email: "",
+      profile: "https://agrilifepeople.tamu.edu/people/view/39943"
+    }
+  ],
 
   /* Date de dernière mise à jour (AAAA-MM-JJ). */
   lastUpdated: "2026-11-19"

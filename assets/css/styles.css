@@ -207,6 +207,7 @@ h3 { font-size: 1.15rem; }
 .portrait .initials small { display: block; font: 400 .66rem var(--mono); letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.6); margin-top: 8px; }
 .person-body { padding: 14px 18px 16px; display: flex; flex-direction: column; flex: 1; }
 .person h3 { font-size: 1.1rem; margin: 0 0 2px; }
+.person .role { align-self: flex-start; font-family: var(--mono); font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: var(--teal); padding: 2px 7px; margin-bottom: 8px; }
 .person .inst { font-size: .86rem; color: var(--muted); line-height: 1.4; margin: 0 0 10px; }
 .person .spec { font-size: .91rem; margin: 0 0 12px; }
 .person .foot { margin-top: auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 12px; padding-top: 10px; border-top: 1px dashed var(--line-strong); font-size: .84rem; }
@@ -257,6 +258,8 @@ h3 { font-size: 1.15rem; }
 .site-footer li + li { margin-top: 6px; }
 .site-footer dl { margin: 0; }
 .site-footer dd { margin: 0 0 6px; color: #fff; }
+.site-footer dd.coord { display: flex; flex-direction: column; gap: 1px; margin-bottom: 14px; }
+.site-footer dd.coord span { color: rgba(255,255,255,.7); font-size: .82rem; }
 .footer-bottom { margin-top: 30px; padding-top: 14px; border-top: 1px solid var(--line-dark); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-family: var(--mono); font-size: .7rem; letter-spacing: .05em; color: rgba(255,255,255,.55); }
 
 /* ---------- 14. Responsive ---------- */

@@ -30,15 +30,21 @@
     if (SITE.conceptNotePdf) { a.href = SITE.conceptNotePdf; a.hidden = false; } else { a.remove(); }
   });
 
-  /* ---------- Contact ---------- */
+  /* ---------- Coordination ---------- */
+  var coord = SITE.coordination || [];
   var contact = $("#contact");
-  if (contact && SITE.contact) {
-    var c = SITE.contact;
-    if (c.name) contact.appendChild(el("dd", { text: c.name }));
-    if (c.role) contact.appendChild(el("dd", { text: c.role }));
-    if (c.email) contact.appendChild(el("dd", {}, [el("a", { href: "mailto:" + c.email, text: c.email })]));
-    if (c.profile) contact.appendChild(el("dd", {}, [ext("Profil institutionnel", c.profile)]));
+  if (contact) {
+    coord.forEach(function (c) {
+      var dd = el("dd", { class: "coord" }, [el("strong", { text: c.name || "" })]);
+      if (c.institution) dd.appendChild(el("span", { text: c.institution }));
+      if (c.email) dd.appendChild(el("a", { href: "mailto:" + c.email, text: c.email }));
+      if (c.profile) dd.appendChild(ext("Profil institutionnel", c.profile));
+      contact.appendChild(dd);
+    });
   }
+  $$("[data-coordination]").forEach(function (n) {
+    if (coord.length) n.textContent = coord.map(function (c) { return c.name; }).join(" et ");
+  });
 
   /* ---------- Programme ---------- */
   var days = $("#days");
@@ -75,6 +81,7 @@
       people.appendChild(el("li", {}, [el("article", { class: "person" }, [
         portrait,
         el("div", { class: "person-body" }, [
+          p.role ? el("span", { class: "role", text: p.role }) : null,
           el("h3", { text: p.name }),
           el("p", { class: "inst", text: p.institution }),
           el("p", { class: "spec", text: p.specialty }),
