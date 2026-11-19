@@ -2,7 +2,7 @@
 
 Site statique (HTML, CSS, JavaScript natif) présentant une **proposition d'atelier en cours de discussion**. Aucune dépendance ni serveur : compatible GitHub Pages.
 
-Adresse prévue : https://ouaretw.github.io/atelier-eo-algerie/
+Adresse prévue : https://atelier-formation-eo-algerie.github.io/
 
 ## Modifier le contenu
 
@@ -74,14 +74,17 @@ python -m http.server 8000
 
 ## Publier sur GitHub Pages
 
-1. Créer sur GitHub un dépôt **public** vide nommé `atelier-eo-algerie` (sans README).
-2. Depuis ce dossier :
+Le site est publié depuis une organisation GitHub dédiée, ce qui donne une adresse courte.
+
+1. Sur GitHub : **+ → New organization → Free**, nom exact `atelier-formation-eo-algerie` (propriétaire : votre compte).
+2. Dans cette organisation, créer un dépôt **public** vide nommé exactement `atelier-formation-eo-algerie.github.io` (sans README).
+3. Depuis ce dossier :
    ```bash
    git push -u origin main
    ```
-3. Sur GitHub : *Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`*.
-4. Le site est en ligne après une à deux minutes à l'adresse indiquée en haut de ce fichier.
+4. Sur GitHub : *Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`* (normalement déjà activé pour un dépôt `*.github.io`).
+5. Le site est en ligne après une à deux minutes : https://atelier-formation-eo-algerie.github.io/
 
 Pour publier une modification : `git add -A`, `git commit -m "…"`, `git push`.
 
-Si le dépôt porte un autre nom, mettre à jour les balises `og:url` et `og:image` dans `index.html`.
+Pour inviter un co-éditeur (par exemple G. Kaci) : *Organisation → People → Invite member*.
