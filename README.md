@@ -6,17 +6,17 @@ Adresse prévue : https://atelier-eo-algerie.github.io/atelier-formation-eo-alge
 
 ## Modifier le contenu
 
-Tout le contenu évolutif se trouve dans `data/` ; il n'est pas nécessaire de toucher au HTML.
+Le site publié se trouve dans le dossier `docs/` (GitHub Pages est configuré sur `main` / `docs`). Tout le contenu évolutif se trouve dans `docs/data/` ; il n'est pas nécessaire de toucher au HTML.
 
 | Pour modifier… | Fichier | Champ |
 |---|---|---|
-| Le statut affiché en haut de page | `data/site.js` | `statusLabel`, `statusText` |
-| La date de mise à jour | `data/site.js` | `lastUpdated` |
-| Les coordinateurs (pied de page, présentation) | `data/site.js` | `coordination` (une entrée par personne) |
-| La note de proposition PDF | `data/site.js` | `conceptNotePdf` (le bouton n'apparaît que si le champ est rempli) |
-| Le programme des trois journées | `data/program.js` | `days`, `note` |
-| Les experts | `data/experts.js` | un objet par personne |
-| Les institutions | `data/institutions.js` | un groupe → une liste d'institutions |
+| Le statut affiché en haut de page | `docs/data/site.js` | `statusLabel`, `statusText` |
+| La date de mise à jour | `docs/data/site.js` | `lastUpdated` |
+| Les coordinateurs (pied de page, présentation) | `docs/data/site.js` | `coordination` (une entrée par personne) |
+| La note de proposition PDF | `docs/data/site.js` | `conceptNotePdf` (le bouton n'apparaît que si le champ est rempli) |
+| Le programme des trois journées | `docs/data/program.js` | `days`, `note` |
+| Les experts | `docs/data/experts.js` | un objet par personne |
+| Les institutions | `docs/data/institutions.js` | un groupe → une liste d'institutions |
 
 ### Experts
 
@@ -34,7 +34,7 @@ Tout le contenu évolutif se trouve dans `data/` ; il n'est pas nécessaire de t
 }
 ```
 
-Portraits : ceux de M. Brown, A. Endsley, M. Enenkel et B. Auvermann sont **affichés depuis leurs pages professionnelles officielles** (aucune licence de réutilisation n'y est indiquée). Une fois l'accord de chaque personne obtenu, il est préférable d'enregistrer une copie dans `assets/images/experts/` et de remplacer l'URL par ce chemin.
+Portraits : ceux de M. Brown, A. Endsley, M. Enenkel et B. Auvermann sont **affichés depuis leurs pages professionnelles officielles** (aucune licence de réutilisation n'y est indiquée). Une fois l'accord de chaque personne obtenu, il est préférable d'enregistrer une copie dans `docs/assets/images/experts/` et de remplacer l'URL par ce chemin.
 
 ### Institutions
 
@@ -54,6 +54,8 @@ Aucune institution ne doit être présentée comme partenaire sans accord écrit
 
 ## Images
 
+Toutes les images se trouvent dans `docs/assets/images/`.
+
 | Fichier | Contenu | Source et licence |
 |---|---|---|
 | `hero-tanezrouft.jpg` | Bassin du Tanezrouft, Sentinel-2, 09/02/2026 | ESA, données Copernicus modifiées — CC BY-SA 3.0 IGO (recadrée) |
@@ -68,6 +70,7 @@ Pour remplacer une image : garder le même nom de fichier (ou modifier `src` dan
 ## Voir le site en local
 
 ```bash
+cd docs
 python -m http.server 8000
 # puis http://localhost:8000
 ```
@@ -77,7 +80,7 @@ python -m http.server 8000
 Dépôt : https://github.com/atelier-eo-algerie/atelier-formation-eo-algerie.github.io (organisation `atelier-eo-algerie`).
 
 1. Depuis ce dossier : `git push -u origin main`
-2. Sur GitHub : *Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`*.
+2. Sur GitHub : *Settings → Pages → Build and deployment → Deploy from a branch → `main` / `/docs`*.
 3. Le site est en ligne après une à deux minutes : https://atelier-eo-algerie.github.io/atelier-formation-eo-algerie.github.io/
 
 Adresse plus courte (facultatif) : renommer le dépôt en `atelier-eo-algerie.github.io` donne https://atelier-eo-algerie.github.io/ ; mettre alors à jour `og:url` et `og:image` dans `index.html` et exécuter `git remote set-url origin https://github.com/atelier-eo-algerie/atelier-eo-algerie.github.io.git`.
