@@ -2,7 +2,7 @@
 
 Site statique (HTML, CSS, JavaScript natif) présentant une **proposition d'atelier en cours de discussion**. Aucune dépendance ni serveur : compatible GitHub Pages.
 
-Adresse prévue : https://atelier-eo-algerie.github.io/atelier-formation-eo-algerie.github.io/
+Adresse prévue : https://atelier-formation-eo-algerie.github.io/
 
 ## Modifier le contenu
 
@@ -77,14 +77,12 @@ python -m http.server 8000
 
 ## Publier sur GitHub Pages
 
-Dépôt : https://github.com/atelier-eo-algerie/atelier-formation-eo-algerie.github.io (organisation `atelier-eo-algerie`).
+Dépôt : https://github.com/atelier-formation-eo-algerie/atelier-formation-eo-algerie.github.io (organisation `atelier-formation-eo-algerie`).
 
 1. Depuis ce dossier : `git push -u origin main`
 2. Sur GitHub : *Settings → Pages → Build and deployment → Deploy from a branch → `main` / `/docs`*.
-3. Le site est en ligne après une à deux minutes : https://atelier-eo-algerie.github.io/atelier-formation-eo-algerie.github.io/
-
-Adresse plus courte (facultatif) : renommer le dépôt en `atelier-eo-algerie.github.io` donne https://atelier-eo-algerie.github.io/ ; mettre alors à jour `og:url` et `og:image` dans `index.html` et exécuter `git remote set-url origin https://github.com/atelier-eo-algerie/atelier-eo-algerie.github.io.git`.
+3. Le site est en ligne après une à deux minutes : https://atelier-formation-eo-algerie.github.io/
 
 Pour publier une modification : `git add -A`, `git commit -m "…"`, `git push`.
 
-Pour inviter un co-éditeur (par exemple G. Kaci) : *Organisation `atelier-eo-algerie` → People → Invite member*.
+Pour inviter un co-éditeur (par exemple G. Kaci) : *Organisation `atelier-formation-eo-algerie` → People → Invite member*.
