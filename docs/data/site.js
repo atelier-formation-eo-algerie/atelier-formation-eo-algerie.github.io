@@ -29,6 +29,16 @@ window.SITE = {
     }
   ],
 
+  /* Coordination locale en Algérie. */
+  localCoordination: [
+    {
+      name: "Fouzia Benmadi",
+      institution: "Afak El Istidama Litakwin (\u2068آفاق الاستدامة للتكوين\u2069), école de formation professionnelle privée agréée",
+      email: "",
+      profile: ""
+    }
+  ],
+
   /* Date de dernière mise à jour (AAAA-MM-JJ). */
-  lastUpdated: "2026-11-19"
+  lastUpdated: "2026-11-20"
 };

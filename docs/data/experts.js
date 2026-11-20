@@ -57,6 +57,17 @@ window.EXPERTS = [
     status: "Participation confirmée"
   },
   {
+    name: "Fouzia Benmadi",
+    role: "Coordination locale",
+    initials: "FB",
+    institution: "Afak El Istidama Litakwin (\u2068آفاق الاستدامة للتكوين\u2069), école de formation professionnelle privée agréée",
+    specialty: "Formation professionnelle ; relais local de la proposition en Algérie.",
+    profile: "",
+    photo: "assets/images/experts/benmadi.jpg",
+    photoCredit: "",
+    status: "Participation confirmée"
+  },
+  {
     name: "Dr Markus Enenkel",
     initials: "ME",
     institution: "Banque mondiale — programme de financement des risques de catastrophe (DRFIP)",

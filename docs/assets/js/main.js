@@ -32,10 +32,12 @@
 
   /* ---------- Coordination ---------- */
   var coord = SITE.coordination || [];
+  var local = SITE.localCoordination || [];
   var contact = $("#contact");
   if (contact) {
-    coord.forEach(function (c) {
+    coord.concat(local.map(function (c) { return Object.assign({ role: "Coordination locale" }, c); })).forEach(function (c) {
       var dd = el("dd", { class: "coord" }, [el("strong", { text: c.name || "" })]);
+      if (c.role) dd.appendChild(el("span", { text: c.role }));
       if (c.institution) dd.appendChild(el("span", { text: c.institution }));
       if (c.email) dd.appendChild(el("a", { href: "mailto:" + c.email, text: c.email }));
       if (c.profile) dd.appendChild(ext("Profil institutionnel", c.profile));
@@ -44,6 +46,12 @@
   }
   $$("[data-coordination]").forEach(function (n) {
     if (coord.length) n.textContent = coord.map(function (c) { return c.name; }).join(" et ");
+  });
+  $$("[data-local-coordination]").forEach(function (n) {
+    if (!local.length) { n.hidden = true; return; }
+    var names = n.querySelector(".primary"), inst = n.querySelector("p:not(.primary)");
+    names.textContent = local.map(function (c) { return c.name; }).join(" et ");
+    inst.textContent = local.map(function (c) { return c.institution; }).filter(Boolean).join(" · ");
   });
 
   /* ---------- Programme ---------- */
